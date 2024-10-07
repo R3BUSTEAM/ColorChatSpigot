@@ -1,0 +1,27 @@
+name: ColorChatPlugin
+version: 1.0
+main: me.r3bus.welplug.Welplug
+api-version: 1.13
+commands:
+  colorlist:
+    description: Lists available chat colors.
+  setcolor:
+    description: Sets your chat color.
+  helpcolor:
+    description: Displays help for the ColorChat plugin.
+  versioncolor:
+    description: Displays the version of the plugin.
+  sethome:
+    description: Sets your home location.
+  home:
+    description: Teleports you to your home location.
+  adminchatcolor:
+    description: Sets the chat color for admin players.
+  ophelpcolor:
+    description: Displays OP help commands.
+  adminhelpcolor:
+    description: Displays admin help commands.
+permissions:
+  colorchat.admin:
+    description: Allows the player to use admin commands.
+    default: op

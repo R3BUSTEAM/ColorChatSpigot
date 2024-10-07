@@ -1,0 +1,81 @@
+name: Welplug
+version: 1.0
+main: me.me.r3bus.welplug.Welplug
+api-version: 1.20
+description: A chat color plugin that enhances player interaction by allowing custom chat colors and more.
+authors:
+  - R3busrevengeplugins
+website: https://github.com/R3BUSTEAM
+
+commands:
+  setcolor:
+    description: Sets your chat color.
+    usage: /setcolor <color>
+    permission: welplug.color.set
+    permission-message: You do not have permission to change your chat color.
+
+  colorlist:
+    description: Lists all available chat colors.
+    usage: /colorlist
+    permission: welplug.color.list
+    permission-message: You do not have permission to view the color list.
+
+  sethome:
+    description: Sets your home location.
+    usage: /sethome
+    permission: welplug.home.set
+    permission-message: You do not have permission to set a home.
+
+  colorhistory:
+    description: Shows your color change history.
+    usage: /colorhistory
+    permission: welplug.color.history
+    permission-message: You do not have permission to view your color history.
+
+  setglobalcolor:
+    description: Sets the global chat color for all players.
+    usage: /setglobalcolor <color>
+    permission: welplug.color.global
+    permission-message: You do not have permission to set the global chat color.
+
+  private:
+    description: Send a private message to another player.
+    usage: /private <player> <message>
+    permission: welplug.message.private
+    permission-message: You do not have permission to send private messages.
+
+  help:
+    description: Displays a list of available commands.
+    usage: /help
+    permission: welplug.help
+    permission-message: You do not have permission to view the help menu.
+
+permissions:
+  welplug.color.set:
+    description: Allows players to set their own chat color.
+    default: true
+
+  welplug.color.list:
+    description: Allows players to view the list of available colors.
+    default: true
+
+  welplug.home.set:
+    description: Allows players to set their home location.
+    default: true
+
+  welplug.color.history:
+    description: Allows players to view their color change history.
+    default: true
+
+  welplug.color.global:
+    description: Allows admins to set the global chat color.
+    default: op
+
+  welplug.message.private:
+    description: Allows players to send private messages.
+    default: true
+
+  welplug.help:
+    description: Allows players to view the help menu.
+    default: true
+
