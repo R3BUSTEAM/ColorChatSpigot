@@ -22,5 +22,51 @@ WelPlug is a powerful and flexible plugin designed for Minecraft servers, enhanc
 The `config.yml` file allows you to customize various aspects of WelPlug. Below is a sample configuration:
 
 ```yaml
-welcome-message: "Welcome to our server, %player%! Enjoy your stay!"
-enable-player-management: true
+# Welplug Configuration File
+# This file controls the settings for the Welplug plugin.
+
+# General settings
+settings:
+  plugin-version: "1.0.0"
+  enable-welcome-messages: true
+  welcome-message: "Welcome to the server, %player%! Enjoy your stay!"
+  farewell-message: "Goodbye, %player%! We hope to see you again soon!"
+  
+# Welcome messages configuration
+welcome-messages:
+  message1: "Welcome back, %player%! Ready for another adventure?"
+  message2: "Hey %player%! The server missed you!"
+  message3: "Greetings %player%! Let’s make some memories today!"
+
+# Player settings
+player-settings:
+  enable-personalized-messages: true
+  default-prefix: "[Player]"
+  custom-prefix: "%player%'s Prefix" # Customize prefix for each player
+  notify-on-join: true # Notify players when a friend joins
+
+# Command settings
+commands:
+  enable-commands: true
+  command-list:
+    - "/welcome" # Command to display the welcome message
+    - "/farewell" # Command to display the farewell message
+    - "/setprefix <prefix>" # Command to set a custom prefix
+    - "/reloadwelplug" # Command to reload the config file
+
+# Permissions settings
+permissions:
+  default-permission: "welplug.use"
+  admin-permission: "welplug.admin"
+
+# Logging settings
+logging:
+  enable-logging: true
+  log-file: "plugins/Welplug/logs/welplug.log"
+  log-level: "INFO" # Possible levels: DEBUG, INFO, WARNING, ERROR
+
+# Customization settings
+customization:
+  enable-color-codes: true # Allow color codes in messages
+  default-message-color: "&7" # Default color for messages
+
